@@ -53,5 +53,8 @@ def plot_graph(filenames, descriptions):
     plt.legend(loc='upper left')
     plt.show()
 
+def main():
+    plot_graph(['test\\test.txt', 'test\\test2.txt'], ['standard method', 'strassen method'])
 
-plot_graph(['test\\test.txt', 'test\\test2.txt'], ['standard method', 'strassen method'])
+if __name__ == '__main__':
+	main()
