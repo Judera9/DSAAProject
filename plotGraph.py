@@ -1,6 +1,6 @@
 # txt file should be as following
 
-# file name: ${method, standard for 0 & strassen for 1}${number of sampling points}_${your name}
+# file name: {method, standard for 0 & strassen for 1}{number of sampling points}{your name}
 # ie: 0_10_guo means: using standard method and have runtimes of 10 n values, upload by guo
 
 # - 1st line: [matrix dimension, method type] -> 10 0
@@ -41,7 +41,7 @@ def plot_graph(filenames, descriptions):
         print('>> x axis values is:', x_values)
 
         runtimes_strs = lines[2].replace('\n', '').split(' ')
-        y_values = list(map(int, runtimes_strs))
+        y_values = list(map(float, runtimes_strs))
 
         print('>> y axis values is:', y_values)
 
@@ -53,8 +53,6 @@ def plot_graph(filenames, descriptions):
     plt.legend(loc='upper left')
     plt.show()
 
-def main():
-    plot_graph(['test\\test.txt', 'test\\test2.txt'], ['standard method', 'strassen method'])
 
-if __name__ == '__main__':
-	main()
+def plot_solver(standard_file, standard_des, strassen_file, strassen_des):
+    plot_graph([standard_file, strassen_file], [standard_des, strassen_des])
