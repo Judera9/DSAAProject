@@ -1,6 +1,7 @@
-import numpy as np
 import math
 from timeit import default_timer as timer
+import strassen_mut
+import numpy as np
 
 
 def read_matrix(m_lines):
@@ -12,28 +13,26 @@ def read_matrix(m_lines):
     return np.array(newMatrix).reshape(-1)
 
 
-def standard(matrix_a, matrix_b, length):
-    matrix_a = matrix_a.reshape(length, length)
-    matrix_b = matrix_b.reshape(length, length)
-    matrix_c = np.zeros([1, length * length], dtype=int).reshape(length, length)
-    for i in range(length):
-        for j in range(length):
-            for k in range(length):
-                matrix_c[i, j] += matrix_a[i, k] * matrix_b[k, j]
-    return matrix_c
+def adapted(matrix_a, matrix_b, length, boundary):
+    return strassen_mut.strassen(matrix_a, matrix_b, length, adapted=True, boundary=boundary)
 
 
-def standard_solver(file_1, file_2):
+def adapted_solver(file_1, file_2, boundary):
     m1_file = open(file_1, 'r+')
     m2_file = open(file_2, 'r+')
+
     matrix_a = read_matrix(m1_file)
     matrix_b = read_matrix(m2_file)
     length = int(math.sqrt(len(matrix_a)))
+    # matrixC = np.zeros((length, length))
+
     # print('>> [INFO] Input matrix A:\n', matrix_a.reshape(length, length))
     # print('>> [INFO] Input matrix B:\n', matrix_b.reshape(length, length))
+    # print(matrixC)
     tic = timer()
-    result_matrix = standard(matrix_a, matrix_b, length)
+    result_matrix = adapted(matrix_a, matrix_b, length, boundary)
     toc = timer()
-    # print('>> [INFO] Output matrix B:\n', result_matrix)
-
+    result_length = int(math.sqrt(len(result_matrix)))
+    result_matrix = result_matrix.reshape(result_length, result_length)
+    # print('>> [INFO] Output matrix B:\n', result_matrix)  # FIXME: adjust result
     return toc - tic

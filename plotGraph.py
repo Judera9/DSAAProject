@@ -33,17 +33,17 @@ def plot_graph(filenames, descriptions):
         dimension = eval(test_attr_str[0])
         method_type = eval(test_attr_str[1].replace('\n', ''))
 
-        print('>> dimension:', dimension, '\n>> type:', method_type)
+        # print('>> dimension:', dimension, '\n>> type:', method_type)
 
         n_strings = lines[1].replace('\n', '').split(' ')
         x_values = list(map(int, n_strings))
 
-        print('>> x axis values is:', x_values)
+        # print('>> x axis values is:', x_values)
 
         runtimes_strs = lines[2].replace('\n', '').split(' ')
         y_values = list(map(float, runtimes_strs))
 
-        print('>> y axis values is:', y_values)
+        # print('>> y axis values is:', y_values)
 
         ax.plot(x_values, y_values, label=descriptions[index])
         plt.xlabel('n')
@@ -56,3 +56,7 @@ def plot_graph(filenames, descriptions):
 
 def plot_solver(standard_file, standard_des, strassen_file, strassen_des):
     plot_graph([standard_file, strassen_file], [standard_des, strassen_des])
+
+
+def plot_triplex(filenames, descriptions):
+    plot_graph(filenames, descriptions)
