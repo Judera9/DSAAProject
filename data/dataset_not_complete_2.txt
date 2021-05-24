@@ -1,0 +1,27 @@
+>> N is: 250
+standard_time: 6.609849727999972
+adapted_time: 4.463104262000343
+>> N is: 500
+standard_time: 53.99349151300021
+adapted_time: 30.86117956499993
+>> N is: 750
+standard_time: 181.82698856000025
+adapted_time: 100.60500942399995
+>> N is: 1000
+standard_time: 429.7426715730003
+adapted_time: 217.66358032800008
+>> N is: 1250
+standard_time: 842.0321129090003
+adapted_time: 408.9398367549993
+>> N is: 1500
+standard_time: 1577.7148665949999
+adapted_time: 739.6311645329997
+>> N is: 1750
+standard_time: 2421.798571436999
+adapted_time: 1105.4303826760006
+>> N is: 2000
+standard_time: 3409.730017191001
+adapted_time: 1499.9984017880015
+>> N is: 2250
+standard_time: 5160.954044384
+adapted_time: 2223.463925611002

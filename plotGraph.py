@@ -60,3 +60,6 @@ def plot_solver(standard_file, standard_des, strassen_file, strassen_des):
 
 def plot_triplex(filenames, descriptions):
     plot_graph(filenames, descriptions)
+
+
+plot_triplex(['data\\dataset_standard_100to900.txt', 'data\\dataset_strassen_100to900.txt'], ['standard', 'strassen'])
