@@ -1,0 +1,369 @@
+>> N is: 10
+standard_time: 0.0005338999999999761
+adapted_time: 0.0005081000000000113
+>> N is: 20
+standard_time: 0.0038453000000000515
+adapted_time: 0.003946000000000005
+>> N is: 30
+standard_time: 0.01282799999999995
+adapted_time: 0.012802100000000038
+>> N is: 40
+standard_time: 0.030140500000000015
+adapted_time: 0.02703830000000007
+>> N is: 50
+standard_time: 0.05790570000000006
+adapted_time: 0.05319970000000007
+>> N is: 60
+standard_time: 0.10050350000000008
+adapted_time: 0.0888433999999999
+>> N is: 70
+standard_time: 0.1585677000000001
+adapted_time: 0.13872569999999995
+>> N is: 80
+standard_time: 0.23580250000000014
+adapted_time: 0.19150670000000014
+>> N is: 90
+standard_time: 0.3359224999999999
+adapted_time: 0.2848717999999999
+>> N is: 100
+standard_time: 0.46037000000000017
+adapted_time: 0.3644734999999999
+>> N is: 110
+standard_time: 0.6152887000000002
+adapted_time: 0.5135995999999996
+>> N is: 120
+standard_time: 0.8096442000000001
+adapted_time: 0.6383711999999999
+>> N is: 130
+standard_time: 1.0276981999999997
+adapted_time: 0.8338866000000005
+>> N is: 140
+standard_time: 1.2680263000000007
+adapted_time: 0.9873370999999995
+>> N is: 150
+standard_time: 1.5513101999999996
+adapted_time: 1.1365805000000009
+>> N is: 160
+standard_time: 1.8816767999999993
+adapted_time: 1.3279964999999994
+>> N is: 170
+standard_time: 2.2960861999999995
+adapted_time: 1.755826299999999
+>> N is: 180
+standard_time: 2.6866749
+adapted_time: 2.0000316
+>> N is: 190
+standard_time: 3.212427599999998
+adapted_time: 2.2610461000000015
+>> N is: 200
+standard_time: 3.6874189999999984
+adapted_time: 2.548060300000003
+>> N is: 210
+standard_time: 4.2637432
+adapted_time: 3.241015300000001
+>> N is: 220
+standard_time: 4.962857200000002
+adapted_time: 3.5731228
+>> N is: 230
+standard_time: 5.595017499999997
+adapted_time: 3.9548142000000013
+>> N is: 240
+standard_time: 6.438240100000002
+adapted_time: 4.365176599999998
+>> N is: 250
+standard_time: 7.214433099999994
+adapted_time: 4.839694199999997
+>> N is: 260
+standard_time: 8.091335700000002
+adapted_time: 5.804316499999999
+>> N is: 270
+standard_time: 9.0466816
+adapted_time: 5.8246328999999974
+>> N is: 280
+standard_time: 10.117181500000001
+adapted_time: 6.941307400000014
+>> N is: 290
+standard_time: 11.287857599999995
+adapted_time: 8.01105960000001
+>> N is: 300
+standard_time: 12.459729399999986
+adapted_time: 8.077905700000002
+>> N is: 310
+standard_time: 14.027119199999987
+adapted_time: 9.332702599999976
+>> N is: 320
+standard_time: 15.147064599999993
+adapted_time: 9.284770000000009
+>> N is: 330
+standard_time: 16.656981400000006
+adapted_time: 10.803903600000012
+>> N is: 340
+standard_time: 18.21555749999999
+adapted_time: 12.282904199999962
+>> N is: 350
+standard_time: 19.814194600000008
+adapted_time: 12.357974099999979
+>> N is: 360
+standard_time: 21.75343029999999
+adapted_time: 14.08656910000002
+>> N is: 370
+standard_time: 23.900251699999956
+adapted_time: 16.0537142
+>> N is: 380
+standard_time: 25.53836290000004
+adapted_time: 16.009109299999977
+>> N is: 390
+standard_time: 27.843701899999985
+adapted_time: 18.005882999999983
+>> N is: 400
+standard_time: 29.97438679999999
+adapted_time: 18.006069799999977
+>> N is: 410
+standard_time: 32.05661609999993
+adapted_time: 20.229656099999943
+>> N is: 420
+standard_time: 34.44670540000004
+adapted_time: 22.486293000000046
+>> N is: 430
+standard_time: 37.1262845
+adapted_time: 22.479926699999965
+>> N is: 440
+standard_time: 39.70465080000008
+adapted_time: 25.051532599999973
+>> N is: 450
+standard_time: 42.49061620000009
+adapted_time: 27.78454439999996
+>> N is: 460
+standard_time: 45.284251100000006
+adapted_time: 27.77953709999997
+>> N is: 470
+standard_time: 48.268253500000014
+adapted_time: 30.828342700000007
+>> N is: 480
+standard_time: 51.44863249999992
+adapted_time: 30.68991730000016
+>> N is: 490
+standard_time: 54.83618660000002
+adapted_time: 33.72825839999996
+>> N is: 500
+standard_time: 58.27456979999988
+adapted_time: 33.906930999999986
+>> N is: 510
+standard_time: 61.71937660000003
+adapted_time: 33.8729737000001
+>> N is: 520
+standard_time: 65.43043590000002
+adapted_time: 40.645115299999816
+>> N is: 530
+standard_time: 69.40109910000001
+adapted_time: 40.37856869999996
+>> N is: 540
+standard_time: 73.41787880000015
+adapted_time: 40.29326480000009
+>> N is: 550
+standard_time: 77.34739940000009
+adapted_time: 47.780385499999966
+>> N is: 560
+standard_time: 82.6470695999999
+adapted_time: 48.414408500000036
+>> N is: 570
+standard_time: 87.77303720000009
+adapted_time: 47.53515760000005
+>> N is: 580
+standard_time: 90.3537397
+adapted_time: 55.86655370000017
+>> N is: 590
+standard_time: 95.38519320000023
+adapted_time: 56.08479070000021
+>> N is: 600
+standard_time: 100.23562709999987
+adapted_time: 55.592808200000036
+>> N is: 610
+standard_time: 105.44940419999966
+adapted_time: 65.16525189999993
+>> N is: 620
+standard_time: 110.43373269999984
+adapted_time: 64.81523969999989
+>> N is: 630
+standard_time: 115.76816899999994
+adapted_time: 64.79897680000022
+>> N is: 640
+standard_time: 121.37043089999997
+adapted_time: 64.5245673999998
+>> N is: 650
+standard_time: 127.24050450000004
+adapted_time: 74.78339499999993
+>> N is: 660
+standard_time: 133.38285720000022
+adapted_time: 74.5243631999997
+>> N is: 670
+standard_time: 139.50467890000027
+adapted_time: 74.55565690000003
+>> N is: 680
+standard_time: 146.5061928
+adapted_time: 85.86107749999974
+>> N is: 690
+standard_time: 152.4685728000004
+adapted_time: 86.19985689999976
+>> N is: 700
+standard_time: 160.53671699999995
+adapted_time: 85.58492999999999
+>> N is: 710
+standard_time: 166.2887270000001
+adapted_time: 97.57194620000064
+>> N is: 720
+standard_time: 173.2696848000005
+adapted_time: 97.53000929999962
+>> N is: 730
+standard_time: 180.50979459999962
+adapted_time: 97.55315969999992
+>> N is: 740
+standard_time: 188.4586879999997
+adapted_time: 110.72375199999988
+>> N is: 750
+standard_time: 196.15713219999998
+adapted_time: 110.57449309999993
+>> N is: 760
+standard_time: 203.89633200000026
+adapted_time: 110.4707398999999
+>> N is: 770
+standard_time: 212.3264975000002
+adapted_time: 124.92051510000056
+>> N is: 780
+standard_time: 220.60808420000012
+adapted_time: 124.76152529999945
+>> N is: 790
+standard_time: 229.12948120000055
+adapted_time: 125.09126090000063
+>> N is: 800
+standard_time: 238.15799719999995
+adapted_time: 125.68561989999944
+>> N is: 810
+standard_time: 247.57843550000052
+adapted_time: 139.89436120000028
+>> N is: 820
+standard_time: 257.48516579999887
+adapted_time: 141.53387450000082
+>> N is: 830
+standard_time: 268.79778989999977
+adapted_time: 140.37881519999974
+>> N is: 840
+standard_time: 277.3565630000012
+adapted_time: 157.23529439999947
+>> N is: 850
+standard_time: 286.39612130000023
+adapted_time: 159.4012385999995
+>> N is: 860
+standard_time: 402.0102885999986
+adapted_time: 156.41279719999875
+>> N is: 870
+standard_time: 306.50644139999895
+adapted_time: 175.03730970000106
+>> N is: 880
+standard_time: 317.31822170000123
+adapted_time: 174.4499923000003
+>> N is: 890
+standard_time: 328.2507119999991
+adapted_time: 173.6847374000008
+>> N is: 900
+standard_time: 338.7066152999996
+adapted_time: 193.14187130000028
+>> N is: 910
+standard_time: 350.45588020000105
+adapted_time: 193.06007979999958
+>> N is: 920
+standard_time: 362.0659080000005
+adapted_time: 192.36175159999948
+>> N is: 930
+standard_time: 373.8757923000012
+adapted_time: 213.02165179999974
+>> N is: 940
+standard_time: 385.9032436999987
+adapted_time: 212.89584690000083
+>> N is: 950
+standard_time: 398.38429590000123
+adapted_time: 212.89434360000087
+>> N is: 960
+standard_time: 410.9758776999988
+adapted_time: 212.76789540000027
+>> N is: 970
+standard_time: 424.7722058999989
+adapted_time: 236.7995972000008
+>> N is: 980
+standard_time: 446.0152385000001
+adapted_time: 239.0315268000013
+>> N is: 990
+standard_time: 467.0508914999991
+adapted_time: 235.34696350000013
+>> N is: 1000
+standard_time: 465.58625029999894
+adapted_time: 236.2611536000004
+>> N is: 1010
+standard_time: 479.7520159000014
+adapted_time: 235.75010159999874
+>> N is: 1020
+standard_time: 493.97894499999893
+adapted_time: 235.91475580000042
+>> N is: 1030
+standard_time: 509.18642069999987
+adapted_time: 282.5159074000003
+>> N is: 1040
+standard_time: 523.6505345000005
+adapted_time: 282.25910210000075
+>> N is: 1050
+standard_time: 538.8652704000015
+adapted_time: 282.11606819999724
+>> N is: 1060
+standard_time: 554.9770599999974
+adapted_time: 279.32238190000135
+>> N is: 1070
+standard_time: 569.2122568000013
+adapted_time: 279.52196299999923
+>> N is: 1080
+standard_time: 585.5570801999966
+adapted_time: 278.9252742999997
+>> N is: 1090
+standard_time: 602.5371981000026
+adapted_time: 332.6939768000011
+>> N is: 1100
+standard_time: 620.1649018999997
+adapted_time: 331.9868538999981
+>> N is: 1110
+standard_time: 636.4579102000025
+adapted_time: 331.246008099999
+>> N is: 1120
+standard_time: 653.1080914000013
+adapted_time: 330.99476030000005
+>> N is: 1130
+standard_time: 670.595868299999
+adapted_time: 330.11642089999805
+>> N is: 1140
+standard_time: 689.0754732999994
+adapted_time: 330.0214398999997
+>> N is: 1150
+standard_time: 707.5479610999973
+adapted_time: 329.8247568000006
+>> N is: 1160
+standard_time: 725.042771700002
+adapted_time: 389.1518999
+>> N is: 1170
+standard_time: 746.383250800005
+adapted_time: 389.162548399996
+>> N is: 1180
+standard_time: 765.5060350999993
+adapted_time: 388.9047075999988
+>> N is: 1190
+standard_time: 784.0867558999962
+adapted_time: 387.19680849999713
+>> N is: 1200
+standard_time: 803.4572417000018
+adapted_time: 387.26029189999826
+>> N is: 1210
+standard_time: 823.1456053000002
+adapted_time: 386.4915037999963
+>> N is: 1220
+standard_time: 846.5748892999982
+adapted_time: 452.6083738000016
+>> N is: 1230
+standard_time: 867.7403066999977
+adapted_time: 452.1273940000028

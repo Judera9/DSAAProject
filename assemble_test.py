@@ -22,9 +22,9 @@ def main():
     # data_strassen_time = list()
     data_standard_time = list()
     data_adapted_time = list()
-    multi_number = 10
+    multi_number = 250
     boundary = 32
-    for i in range(1, 500):
+    for i in range(1, 20):
         data_n.append(i * multi_number)
         generate_test('test\\generate_test_%d.txt' %
 
