@@ -1,0 +1,214 @@
+>> N is: 200
+standard_time: 3.6955812000000003
+strassen2_time: 6.7582126
+strassen3_time: 8.519883299999998
+>> [INFO] Output matrix B:
+ [[5 7 8 ... 5 5 1]
+ [9 0 4 ... 4 0 6]
+ [4 1 0 ... 7 8 0]
+ ...
+ [7 7 4 ... 4 6 4]
+ [1 9 5 ... 4 1 7]
+ [5 6 9 ... 2 6 9]]
+result length: 110
+>> in fun 1
+>> in fun 2
+>> in fun 3
+>> in fun 4
+<< out fun 3: finish in time: 6.612510700000001
+<< out fun 4:finish in time: 8.146697700000004
+<< out fun 2: finish in time: 8.178290399999995
+<< out fun 1: finish in time: 8.480832
+>> [INFO] Output matrix B:
+ [[4469 4074 3944 ... 3751    0    0]
+ [4750 4269 4351 ... 4236    0    0]
+ [4559 4358 3953 ... 3986    0    0]
+ ...
+ [4516 4452 4336 ... 4293    0    0]
+ [   0    0    0 ...    0    0    0]
+ [   0    0    0 ...    0    0    0]]
+result length: 256
+>> N is: 220
+standard_time: 4.907314100000001
+strassen2_time: 6.621405599999999
+strassen3_time: 8.4817021
+>> [INFO] Output matrix B:
+ [[8 5 3 ... 9 3 3]
+ [9 6 7 ... 1 9 1]
+ [4 2 1 ... 8 6 7]
+ ...
+ [7 5 7 ... 1 9 6]
+ [8 1 7 ... 1 3 7]
+ [0 4 0 ... 9 6 7]]
+result length: 120
+>> in fun 1
+>> in fun 2
+>> in fun 3
+>> in fun 4
+<< out fun 4:finish in time: 2.741987100000003
+<< out fun 3: finish in time: 7.784411200000001
+<< out fun 2: finish in time: 7.799939200000004
+<< out fun 1: finish in time: 7.836628900000001
+>> [INFO] Output matrix B:
+ [[4610 5338 4928 ... 5298 4875    0]
+ [4720 5114 5193 ... 5177 5087    0]
+ [4771 5418 4992 ... 5374 5147    0]
+ ...
+ [4864 5242 5129 ... 5400 4949    0]
+ [4440 4923 4717 ... 5237 4807    0]
+ [   0    0    0 ...    0    0    0]]
+result length: 256
+>> N is: 240
+standard_time: 6.315294299999998
+strassen2_time: 6.084667099999997
+strassen3_time: 7.8372566999999975
+>> [INFO] Output matrix B:
+ [[2 0 8 ... 4 2 7]
+ [6 1 4 ... 1 2 5]
+ [5 2 9 ... 1 0 4]
+ ...
+ [2 1 0 ... 0 7 9]
+ [4 8 3 ... 7 9 2]
+ [0 4 2 ... 8 3 2]]
+result length: 130
+>> in fun 1
+>> in fun 2
+>> in fun 3
+>> in fun 4
+<< out fun 3: finish in time: 10.314888699999997
+<< out fun 4:finish in time: 10.897453299999995
+<< out fun 2: finish in time: 13.354808899999995
+<< out fun 1: finish in time: 13.417314699999991
+>> [INFO] Output matrix B:
+ [[5026 5468 5645 ...    0    0    0]
+ [5293 5280 5431 ...    0    0    0]
+ [4918 5050 5089 ...    0    0    0]
+ ...
+ [   0    0    0 ...    0    0    0]
+ [   0    0    0 ...    0    0    0]
+ [   0    0    0 ...    0    0    0]]
+result length: 320
+>> N is: 260
+standard_time: 8.143628500000005
+strassen2_time: 10.524755499999998
+strassen3_time: 13.418310599999998
+>> [INFO] Output matrix B:
+ [[9 8 0 ... 6 9 9]
+ [0 3 0 ... 9 8 2]
+ [3 8 6 ... 2 5 3]
+ ...
+ [1 8 7 ... 2 5 0]
+ [5 0 9 ... 9 9 9]
+ [7 3 6 ... 8 2 0]]
+result length: 140
+>> in fun 1
+>> in fun 2
+>> in fun 3
+>> in fun 4
+<< out fun 3: finish in time: 9.042769700000008
+<< out fun 4:finish in time: 11.675670199999999
+<< out fun 1: finish in time: 12.925289800000002
+<< out fun 2: finish in time: 13.188014299999992
+>> [INFO] Output matrix B:
+ [[5481 5217 5581 ... 5578    0    0]
+ [5082 5132 5371 ... 5518    0    0]
+ [6052 5272 5613 ... 6180    0    0]
+ ...
+ [6001 5553 5585 ... 6006    0    0]
+ [   0    0    0 ...    0    0    0]
+ [   0    0    0 ...    0    0    0]]
+result length: 320
+>> N is: 280
+standard_time: 10.214732100000006
+strassen2_time: 10.494434799999993
+strassen3_time: 13.189368299999998
+>> [INFO] Output matrix B:
+ [[9 1 5 ... 1 3 6]
+ [5 6 7 ... 3 2 0]
+ [9 5 0 ... 0 1 7]
+ ...
+ [9 6 5 ... 7 8 6]
+ [2 4 8 ... 9 3 8]
+ [4 1 9 ... 3 9 9]]
+result length: 150
+>> in fun 1
+>> in fun 2
+>> in fun 3
+>> in fun 4
+<< out fun 3: finish in time: 11.961462699999998
+<< out fun 4:finish in time: 12.477506500000004
+<< out fun 1: finish in time: 12.573522400000002
+<< out fun 2: finish in time: 12.637435199999999
+>> [INFO] Output matrix B:
+ [[6667 6064 6620 ... 5987    0    0]
+ [6396 6052 6439 ... 5856    0    0]
+ [6768 5885 6246 ... 5978    0    0]
+ ...
+ [6498 6260 6519 ... 6217    0    0]
+ [   0    0    0 ...    0    0    0]
+ [   0    0    0 ...    0    0    0]]
+result length: 320
+>> N is: 300
+standard_time: 12.592215500000009
+strassen2_time: 9.896614800000009
+strassen3_time: 12.638851800000026
+>> [INFO] Output matrix B:
+ [[9 0 9 ... 9 9 5]
+ [9 3 0 ... 7 8 4]
+ [3 8 6 ... 5 1 0]
+ ...
+ [9 5 7 ... 0 0 1]
+ [5 4 8 ... 3 2 0]
+ [8 9 5 ... 0 0 9]]
+result length: 160
+>> in fun 1
+>> in fun 2
+>> in fun 3
+>> in fun 4
+<< out fun 3: finish in time: 12.6399002
+<< out fun 1: finish in time: 12.752767199999994
+<< out fun 4:finish in time: 12.849499399999985
+<< out fun 2: finish in time: 13.014472900000015
+>> [INFO] Output matrix B:
+ [[7069 6819 6925 ... 6727 6898 6660]
+ [6755 6546 6870 ... 6681 6647 6628]
+ [6766 6752 6487 ... 6599 6377 6308]
+ ...
+ [7096 6837 7042 ... 7073 7178 6285]
+ [6766 6418 6663 ... 6587 6352 6063]
+ [6918 6817 6751 ... 7009 6882 6606]]
+result length: 320
+>> N is: 320
+standard_time: 15.439522900000014
+strassen2_time: 9.913895700000012
+strassen3_time: 13.015489900000006
+>> [INFO] Output matrix B:
+ [[3 8 2 ... 2 3 8]
+ [3 3 9 ... 2 5 3]
+ [1 6 6 ... 1 5 0]
+ ...
+ [9 2 1 ... 8 0 7]
+ [3 0 0 ... 1 2 9]
+ [5 5 1 ... 9 9 4]]
+result length: 170
+>> in fun 1
+>> in fun 2
+>> in fun 3
+>> in fun 4
+<< out fun 3: finish in time: 7293.815143
+<< out fun 4:finish in time: 7298.4186623
+<< out fun 1: finish in time: 7299.5370227
+<< out fun 2: finish in time: 7300.2940573000005
+>> [INFO] Output matrix B:
+ [[7010 6753 6866 ...    0    0    0]
+ [6410 6428 6382 ...    0    0    0]
+ [7074 6593 7177 ...    0    0    0]
+ ...
+ [   0    0    0 ...    0    0    0]
+ [   0    0    0 ...    0    0    0]
+ [   0    0    0 ...    0    0    0]]
+result length: 384
+>> N is: 340
+standard_time: 18.5320155
+strassen2_time: 26.553184000000016
+strassen3_time: 7300.295060500001

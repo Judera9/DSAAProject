@@ -62,4 +62,6 @@ def plot_triplex(filenames, descriptions):
     plot_graph(filenames, descriptions)
 
 
-plot_triplex(['data\\dataset_standard_100to900.txt', 'data\\dataset_strassen_100to900.txt'], ['standard', 'strassen'])
+# plot_triplex(['..\\data\\dataset_standard_to1000.txt',
+#               '..\\data\\dataset_strassen2_to1000.txt'],
+#              ['standard', 'strassen2'])
