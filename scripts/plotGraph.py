@@ -62,6 +62,64 @@ def plot_triplex(filenames, descriptions):
     plot_graph(filenames, descriptions)
 
 
-# plot_triplex(['..\\data\\dataset_standard_to1000.txt',
-#               '..\\data\\dataset_strassen2_to1000.txt'],
-#              ['standard', 'strassen2'])
+# plot_triplex([
+#     # '..\\data\\python_final_data\\depre_adapted\\dataset_adapted_128_to500type2.txt',
+#     # '..\\data\\python_final_data\\depre_adapted\\dataset_adapted_64_to500type2.txt',
+#     # '..\\data\\python_final_data\\depre_adapted\\dataset_adapted_32_to500type2.txt',
+#     # '..\\data\\python_final_data\\strassen2_boundary8\\dataset_strassen2_8_to500type2.txt',
+#     # '..\\data\\python_final_data\\strassen2_boundary6\\dataset_strassen2_6_to500type2.txt',
+#     # '..\\data\\python_final_data\\strassen2_boundary4\\dataset_strassen2_4_to500type2.txt',
+#     # '..\\data\\python_final_data\\strassen3_strassen\\dataset_strassen3(not using s2)_to1000.txt',
+#     '..\\data\\python_final_data\\strassen3_strassen2_boundary6\\dataset_strassen3_strassen2_6_to1000.txt',
+#     '..\\data\\python_final_data\\strassen3_strassen2_boundary32\\dataset_strassen3_strassen2_32_to1000.txt',
+#     # '..\\data\\python_final_data\\standard\\dataset_standard_to500type2.txt',
+#     # '..\\data\\python_final_data\\strassen_original\\dataset_strassen_to500type2.txt'
+# ],
+#     [
+#         # 'lowerBound_128_python',
+#         # 'lowerBound_64_python',
+#         # 'lowerBound_32_python',
+#         # 'lowerBound_8_python',
+#         # 'lowerBound_6_python',
+#         # 'lowerBound_4_python',
+#         # 'MultiProcess_with_strassen_python',
+#         'MultiProcess_with_lowerBound_6_python',
+#         'MultiProcess_with_lowerBound_32_python',
+#         # 'standard_python',
+#         # 'strassen_python'
+#     ])
+#
+# plot_triplex([
+#     # '..\\data\\python_final_data\\depre_adapted\\dataset_adapted_64_to500type2.txt',
+#     '..\\data\\java_final_data\\strassen2_128_java_4000.txt',
+#     '..\\data\\java_final_data\\strassen2_64_java_4000.txt',
+#     '..\\data\\java_final_data\\strassen2_32_java_4000.txt',
+#     '..\\data\\java_final_data\\strassen2_16_java_4000.txt',
+#     # '..\\data\\python_final_data\\standard\\dataset_standard_to500type2.txt',
+#     # '..\\data\\java_final_data\\standard_java_500.txt',
+#     # '..\\data\\python_final_data\\strassen_original\\dataset_strassen_to500type2.txt',
+#     # '..\\data\\java_final_data\\strassen_java_500.txt'
+# ],
+#     [
+#         # 'lowerBound_64_python',
+#         'lowerBound_128_java',
+#         'lowerBound_64_java',
+#         'lowerBound_32_java',
+#         'lowerBound_16_java',
+#         # 'standard_python_500',
+#         # 'standard_java',
+#         # 'strassen_python_500',
+#         # 'strassen_java'
+#     ])
+
+# plot_triplex(['..\\data\\c_super_method\\CPP.txt'], ['standard_method_c'])
+
+# plot_triplex([
+#     '..\\data\\dataset_strassen_with_print.txt',
+#     '..\\data\\dataset_strassen_without_print.txt',
+#     # '..\\data\\python_final_data\\strassen3_thread\\standard_type2.txt',
+# ], [
+#     'strassen_with_print',
+#     'strassen_without_print',
+#     # 'standard'
+# ])

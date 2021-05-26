@@ -1,3 +1,6 @@
+NOTE: python Threading module
+
+
 >> N is: 200
 standard_time: 3.6955812000000003
 strassen2_time: 6.7582126

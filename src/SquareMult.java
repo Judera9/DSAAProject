@@ -3,17 +3,22 @@
  */
 
 public class SquareMult {
+    public SquareMult(){
+    }
     public Matrix standardMult(Matrix a,Matrix b) {
-        if(a.column != b.row) {
+        /*
+         *
+         */
+        if(a.getColumn(a) != b.getRow(b)) {
             System.out.println("Error");//Make sure that matrix can be multiplied
             return null;
         }
-        Matrix result = new Matrix(a.row,b.column);//Set a new n×n matrix to store result
+        Matrix result = new Matrix(a.getRow(a),b.getColumn(b));//Set a new n×n matrix to store result
         double val = 0;
-        for(int i = 0;i < a.row;i++) {
-            for(int j = 0;j < b.column;j++) {
+        for(int i = 0;i < a.getRow(a);i++) {
+            for(int j = 0;j < b.getColumn(b);j++) {
                 val = 0;//val is cij
-                for(int k = 0;k < a.column;k++) {
+                for(int k = 0;k < a.getColumn(a);k++) {
                     val = val + a.getVal(i, k) * b.getVal(k, j);
                 }
                 result.setVal(i, j, val);

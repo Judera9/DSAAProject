@@ -1,0 +1,34 @@
+>> N is: 50
+standard2_4_time: 0.36019719999999994
+strassen2_6_time: 0.13823359999999996
+strassen2_8_time: 0.06911560000000005
+>> N is: 100
+standard2_4_time: 2.5151526000000004
+strassen2_6_time: 0.9638447000000006
+strassen2_8_time: 0.4841787000000002
+>> N is: 150
+standard2_4_time: 4.333961400000001
+strassen2_6_time: 1.4116922999999986
+strassen2_8_time: 1.4092876000000008
+>> N is: 200
+standard2_4_time: 17.6589418
+strassen2_6_time: 6.8625457999999995
+strassen2_8_time: 3.3820553999999987
+>> N is: 250
+standard2_4_time: 16.8779075
+strassen2_6_time: 6.139929599999995
+strassen2_8_time: 6.112772499999991
+>> N is: 300
+standard2_4_time: 30.29075619999999
+strassen2_6_time: 9.8738168
+strassen2_8_time: 9.856770999999995
+>> N is: 350
+standard2_4_time: 26.2952334
+strassen2_6_time: 26.239692899999994
+strassen2_8_time: 16.20604069999999
+>> N is: 400
+standard2_4_time: 4103.860117300001
+strassen2_6_time: 48.029591399999845
+strassen2_8_time: 23.74436700000024
+
+Process finished with exit code -1
