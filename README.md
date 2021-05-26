@@ -54,3 +54,8 @@ If you use algorithm in Java, generate your test results in the form like other 
 * 根据strassen作者论文添加一些分析和说明
 * 说明阶梯状的原因（做一点数学推导）
 * 其他能想到的
+
+# Finished in 5.26
+Pre is not as well as expected\
+Results is good\
+English presentation need to be improved
