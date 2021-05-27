@@ -28,6 +28,10 @@ and plot answers like other multiply algorithms.
     fun_sub1_2(matrix_a12, matrix_b21, length, matrix_11_2)
     ...
     fun_sub4_1(matrix_a21, matrix_b12, length, matrix_22_1)
+    
+    set_threshold(data_N, optimized, standard)
+    adapted_mult(test_file, length, threshold_val)
+    __name__ == "__main__"
 """
 
 """

@@ -2,6 +2,23 @@ import numpy as np
 import math
 from timeit import default_timer as timer
 
+"""
+@ Filename: standard_mult.py
+    This file contains method that use standard matrix multiplication, O(n^3) time complication
+@ Methods: 
+    read_matrix(m_lines)
+    standard(matrix_a, matrix_b, length)
+    standard_solver(file_1, file_2)
+"""
+
+"""
+@ Function: read_matrix
+    used to read from the file passed in this method, turn the lines input into a list first, 
+    than convert it into a numpy one dimension array for the use of later multiplication
+@ Parameter: m_lines
+    a type of file input stream for python
+"""
+
 
 def read_matrix(m_lines):
     newMatrix = []
@@ -12,6 +29,26 @@ def read_matrix(m_lines):
     return np.array(newMatrix).reshape(-1)
 
 
+"""
+@ Function: standard(matrix_a, matrix_b, length)
+    multiply the two input matrices and return the results, NOTED that I use numpy matrix multiplication 
+    to compute, because the numpy module has already do optimization in itself, and then I reshape the results back 
+    into the one dimension array
+@ Parameters: matrix_a, matrix_b
+@ Parameter: length
+@ Pseudo code:
+
+SQUARE-MATRIX-MULTIPLY (A, B)
+    n = A.rows
+    let C be a new n×n matrix
+    for i = 1 to n 
+        for j = 1 to n 
+            for k =1 to n 
+                cij = cij + aik×bkj
+    return C
+"""
+
+
 def standard(matrix_a, matrix_b, length):
     matrix_a = matrix_a.reshape(length, length)
     matrix_b = matrix_b.reshape(length, length)
@@ -20,7 +57,15 @@ def standard(matrix_a, matrix_b, length):
         for j in range(length):
             for k in range(length):
                 matrix_c[i, j] += matrix_a[i, k] * matrix_b[k, j]
-    return matrix_c
+    return matrix_c.reshape(-1)
+
+
+"""
+@ Function: standard_solver(file_1, file_2)
+    the solver method for the standard matrix multiplication
+@ Parameters: file_1, file_2
+    the test files that read in
+"""
 
 
 def standard_solver(file_1, file_2):
@@ -34,6 +79,6 @@ def standard_solver(file_1, file_2):
     tic = timer()
     result_matrix = standard(matrix_a, matrix_b, length)
     toc = timer()
-    # print('>> [INFO] Output matrix B:\n', result_matrix)
+    # print('>> [INFO] Output matrix B:\n', result_matrix.reshape(length, length))
 
     return toc - tic

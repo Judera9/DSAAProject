@@ -53,7 +53,7 @@ def strassen(matrix_a, matrix_b, length, optimized=False, boundary=6):
     # print('This is the %d print' % print_index)
     # print_index += 1
     if optimized and boundary > length:
-        matrix_all = standard_mult.standard(matrix_a, matrix_b, length).reshape(-1)
+        matrix_all = standard_mult.standard(matrix_a, matrix_b, length)
     elif length == 1:
         matrix_all = np.array([matrix_a[0] * matrix_b[0]])
     else:
