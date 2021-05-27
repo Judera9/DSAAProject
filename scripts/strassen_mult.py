@@ -153,6 +153,8 @@ def strassen(matrix_a, matrix_b, length, optimized=False, boundary=32):
     elif length == 1:  # if length is 1, stop recursion and start to merge from the smallest sub matrix
         matrix_all = np.array([matrix_a[0] * matrix_b[0]])
     else:
+
+        # if the read-in matrix length is not even number, need to change it into even for later eight sub matrices
         if length % 2 != 0:
             matrix_a = matrix_a.reshape(length, length)
             matrix_b = matrix_b.reshape(length, length)

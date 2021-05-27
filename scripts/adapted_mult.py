@@ -31,7 +31,7 @@ and plot answers like other multiply algorithms.
     
     set_threshold(data_N, optimized, standard)
     adapted_mult(test_file, length, threshold_val)
-    __name__ == "__main__"
+    main()
 """
 
 """

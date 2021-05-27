@@ -1,13 +1,23 @@
-# txt file should be as following
-
-# file name: {method, standard for 0 & strassen for 1}{number of sampling points}{your name}
-# ie: 0_10_guo means: using standard method and have runtimes of 10 n values, upload by guo
-
-# - 1st line: [matrix dimension, method type] -> 10 0
-# - 2ed line: array dimension -> 1024 2048 4095 8192 ... 16334
-# - 3rd line: execution time (seconds) -> 1 3 5 12 35 ... 25
-
 import matplotlib.pyplot as plt
+
+"""
+@ Filename: plotGraph.py
+    Using methods in this file to plot graph of the results, using matplotlib
+    The following is our agreement of the dataset.* file:
+        txt file should be as following
+        
+        file name: {method, standard for 0 & strassen for 1}{number of sampling points}{your name}
+        ie: 0_10_guo means: using standard method and have runtimes of 10 n values, upload by guo
+        
+        - 1st line: [matrix dimension, method type] -> 10 0
+        - 2ed line: array dimension -> 1024 2048 4095 8192 ... 16334
+        - 3rd line: execution time (seconds) -> 1 3 5 12 35 ... 25
+@ Methods: 
+    read_file(filenames)
+    plot_graph(filenames, descriptions)
+    plot_solver(standard_file, standard_des, strassen_file, strassen_des)  # deprecated
+    plot_triplex(filenames, descriptions)
+"""
 
 
 def read_file(filenames):
@@ -19,6 +29,15 @@ def read_file(filenames):
         f.close()
         index = index + 1
     return files  # a array contains all the files' strings
+
+
+"""
+@ Function: plot_graph(filenames, descriptions)
+    used to plot results
+@ Parameters: filenames, descriptions
+    list of files: like [file1, file2, file3...]
+    list of descriptions: like [desc1, desc2, desc3...]
+"""
 
 
 # param: plotGraph(list[filename1, filename2,...]]
@@ -33,17 +52,11 @@ def plot_graph(filenames, descriptions):
         dimension = eval(test_attr_str[0])
         method_type = eval(test_attr_str[1].replace('\n', ''))
 
-        # print('>> dimension:', dimension, '\n>> type:', method_type)
-
         n_strings = lines[1].replace('\n', '').split(' ')
         x_values = list(map(int, n_strings))
 
-        # print('>> x axis values is:', x_values)
-
         runtimes_strs = lines[2].replace('\n', '').split(' ')
         y_values = list(map(float, runtimes_strs))
-
-        # print('>> y axis values is:', y_values)
 
         ax.plot(x_values, y_values, label=descriptions[index])
         plt.xlabel('n')
@@ -54,13 +67,29 @@ def plot_graph(filenames, descriptions):
     plt.show()
 
 
+"""
+@ Function(deprecated): plot_solver(standard_file, standard_des, strassen_file, strassen_des)
+    plot just two of the results, deprecated now
+@ Parameter: standard_file, standard_des, strassen_file, strassen_des
+"""
+
+
 def plot_solver(standard_file, standard_des, strassen_file, strassen_des):
     plot_graph([standard_file, strassen_file], [standard_des, strassen_des])
 
 
+"""
+@ Function: plot_triplex(filenames, descriptions)
+    plot a list of results(actually this triplex is not only three, but can plot any number of results)
+@ Parameter: filenames, descriptions
+    list of files: like [file1, file2, file3...]
+    list of descriptions: like [desc1, desc2, desc3...]
+    NOTED: the amount of input results must have corresponding descriptions
+"""
+
+
 def plot_triplex(filenames, descriptions):
     plot_graph(filenames, descriptions)
-
 
 # plot_triplex([
 #     # '..\\data\\python_final_data\\depre_adapted\\dataset_adapted_128_to500type2.txt',

@@ -6,7 +6,18 @@ import strassen2_mult
 import plotGraph
 
 """
+@ Filename: assemble_test.py
+    assembly test all the methods here(except methods about multi-processing), and plot results of them
+@ Methods: 
+    generate_test(filename, n)
+    main()
+    write_data(filename, data_n, data_times, method_type)
+"""
+
+
+"""
 @ Function: generate_test(filename, n)
+    generate tests for random numbers, and write them into test files
 @ Parameter: filename
     the file name of the generated test file
 @ Parameter: n
@@ -29,62 +40,39 @@ def generate_test(filename, n):
 @ Function: assemble_test.py
     the function used to assembly test different algorithms
 @ Variable: data_n
-    a list of "n" values used to ...
+    is a list of "n" values used in the test. In the following for loop, NOTED that 
+    'multi_number = 10' is the distance of each N value, 'for i in range(1, 5)' means that the test range is:
+    [10 20 30 40]
+    
+{take strassen algorithm for example}
 @ Variable: data_strassen_time
-    ...
+    is a list of time of the running results
+@ Variable: strassen_time
+    is a single result for a particular N value, been append to data_strassen_time
 """
 
 
 def main():
     data_n = list()
     data_strassen_time = list()
-    # data_standard_time = list()
-    # data_strassen2_4_time = list()
-    # data_strassen2_6_time = list()
-    # data_strassen2_8_time = list()
-    # data_strassen3_time = list()
     # boundary = 6  # used for the optimized strassen method: strassen2_mult.py
 
     multi_number = 10
-
     for i in range(1, 5):
         data_n.append(i * multi_number)
-
-        # generate random tests
-        # generate_test('..\\test\\generate_test_%d.txt' % (i * multi_number), i * multi_number)
         testfile = '..\\test\\generate_test_%d.txt' % (i * multi_number)
-
-        # use different solver methods to get runtime of different n given
         strassen_time = strassen_mult.strassen_solver(testfile, testfile)
-        # strassen2_4_time = strassen2_mult.strassen2_solver(testfile, testfile, boundary=4)
-        # strassen2_6_time = strassen2_mult.strassen2_solver(testfile, testfile, boundary=6)
-        # strassen2_8_time = strassen2_mult.strassen2_solver(testfile, testfile, boundary=8)
-
-        # print('>> N is:', i * multi_number, '\nstandard_time:', standard_time, '\nstrassen_time:', strassen_time,
-        # '\nadapted_time:', adapted_time)
-
-        print('>> N is:', i * multi_number,
-              '\nstrassen_time:', strassen_time,
-              # '\nstrassen2_8_time:', strassen2_8_time
-              )
-
-        # data_strassen2_4_time.append(strassen2_4_time)
         data_strassen_time.append(strassen_time)
-        # data_strassen2_6_time.append(strassen2_6_time)
-        # data_strassen2_8_time.append(strassen2_8_time)
+    write_data('..\\data\\dataset_strassen_without_print.txt', data_n, data_strassen_time, 0)  # write in dataset_*
+    plotGraph.plot_triplex(['data\\dataset_strassen.txt'], ['strassen'])
 
-    # write_data('..\\data\\dataset_strassen2_4.txt', data_n, data_strassen2_4_time, 2)
-    write_data('..\\data\\dataset_strassen_without_print.txt', data_n, data_strassen_time, 0)
-    # write_data('..\\data\\dataset_strassen2_6.txt', data_n, data_strassen2_6_time, 2)
-    # write_data('..\\data\\dataset_strassen2_8.txt', data_n, data_strassen2_8_time, 2)
 
-    # plotGraph.plot_triplex(['data\\dataset_standard.txt', 'data\\dataset_strassen.txt', 'data\\dataset_adapted.txt'],
-    #                        ['standard', 'strassen', 'adapted-%s' % boundary])
-
-    # plotGraph.plot_triplex(['..\\data\\dataset_strassen2_6.txt',
-    #                         '..\\data\\dataset_strassen2_8.txt'],
-    #                        ['strassen2 with boundary 6',
-    #                         'strassen2 with boundary 8'])
+"""
+@ Function: write_data(filename, data_n, data_times, method_type)
+    write data into the 'filename' file
+@ Parameters: filename, data_n, data_times, method_type
+    method_type is 0 for strassen, 1 for standard, 2 for optimized
+"""
 
 
 def write_data(filename, data_n, data_times, method_type):
