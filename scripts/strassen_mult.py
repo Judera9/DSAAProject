@@ -3,7 +3,13 @@ import numpy as np
 from timeit import default_timer as timer
 import standard_mult
 
-# print_index = 0
+"""
+@ Function: read_matrix
+    used to read from the file passed in this method, turn the lines input into a list first, 
+    than convert it into a numpy one dimension array for the use of later multiplication
+@ Parameter: m_lines
+    a type of file input stream for python
+"""
 
 
 def read_matrix(m_lines):
@@ -15,12 +21,39 @@ def read_matrix(m_lines):
     return np.array(newMatrix).reshape(-1)
 
 
+"""
+@ Function: matrix_add(matrix_a, matrix_b)
+    add two matrix using method build in numpy
+@ Parameters: matrix_a, matrix_b
+"""
+
+
 def matrix_add(matrix_a, matrix_b):
     return matrix_a + matrix_b
 
 
+"""
+@ Function: matrix_minus(matrix_a, matrix_b)
+    minus two matrix using method build in numpy
+@ Parameters: matrix_a, matrix_b
+"""
+
+
 def matrix_minus(matrix_a, matrix_b):
     return matrix_a - matrix_b
+
+
+"""
+@ Function: matrix_divide(matrix, row_index, col_index, length)
+    divided the matrix input into four parts(return the part needed), the return variable has 
+    already be flattened into a one dimensional array
+        M11 | M12
+        M21 | M22 -> M_row_index_col_index
+@ Parameter: matrix
+    the matrix needed to be divided
+@ Parameters: row_index, col_index
+    the index of the part needed to be divided, as explained above
+"""
 
 
 def matrix_divide(matrix, row_index, col_index, length):
@@ -36,6 +69,14 @@ def matrix_divide(matrix, row_index, col_index, length):
     return matrix.flatten()
 
 
+"""
+@ Function: matrix_merge(matrix_11, matrix_12, matrix_21, matrix_22)
+    merge the four sub matrix back into a matrix
+@ Parameters: matrix_11, matrix_12, matrix_21, matrix_22
+    the four sub matrices needed to be merged
+"""
+
+
 def matrix_merge(matrix_11, matrix_12, matrix_21, matrix_22):
     length = int(math.sqrt(len(matrix_11)))
     matrix_11 = matrix_11.reshape(length, length)
@@ -48,13 +89,68 @@ def matrix_merge(matrix_11, matrix_12, matrix_21, matrix_22):
     return np.c_[matrix_left, matrix_right].reshape(-1)
 
 
-def strassen(matrix_a, matrix_b, length, optimized=False, boundary=6):
-    # global print_index
-    # print('This is the %d print' % print_index)
-    # print_index += 1
+"""
+@ Function: matrix_a, matrix_b, length, optimized=False, boundary=6
+    multiply the two input matrices and return the results, NOTED that I use numpy matrix multiplication 
+    to compute, because the numpy module has already do optimization in itself, and then I reshape the results back 
+    into the one dimension array
+@ Parameters: matrix_a, matrix_b
+@ Parameter: length
+@ Parameter: optimized
+    Default to set as false. If the optimized is true, then this strassen method would use the lower boundary 
+    method the optimize the raw strassen method.
+@ Parameter: boundary
+    This boundary is for the lower boundary method(if the 'optimized' is set to be true). Default as 32, 
+    because 32 is tested to possibly be the best optimized boundary for lower boundary method
+@ Pseudo code:
+
+Suppose that A,B has n rows, and n satisfy that 2^m - c = n, and 2^m>n>2^(m-1), 
+Then we construct matrix A' ,B', which A', B' has 2^m rows, A' = [A 0] , B' = [B 0]
+
+create 10 matrix which is defined by 
+S1=B'12−B'22 
+S2=A'11+A'12
+S3=A'21+A'22
+S4=B'21−B'11 
+S5=A'11+A'22
+S6=B'11+B'22
+S7=A'12−A'22
+S8=B'21+B'22 
+S9=A'11−A'21 
+S10=B'11+B'12
+
+Strassen(A',B')
+n = A'.rows
+
+P1 Strassen(A'11,B'12 − B'22) 
+P2 Strassen(A'11 + A'12,B'22) 
+P3 Strassen(A'21 + A'22,B'11) 
+P4 Strassen(A'22,B'21 − B'11) 
+P5 Strassen(A'11 + A'22,B'11 + B'22) 
+P6 Strassen(A'12 − A'22,B'21 + B'22) 
+P7 Strassen(A'11 − A'21,B'11 + B'12) 
+
+let C' be a new (2^m)*(2^m) matrix
+if m==1
+    c11=a11*b11
+else partition A, B and C as above
+C'11= P5 + P4 − P2 + P6 
+C'12= P1 + P2 
+C'21= P3 + P4 
+C'22= P1 + P5 − P3 − P7 
+for i = 1 to n 
+    for j = 1 to n 
+        cij = c'ij
+return C 
+"""
+
+
+def strassen(matrix_a, matrix_b, length, optimized=False, boundary=32):
+
+    # if this is an strassen2(lower bound optimization), here is the boundary judge
     if optimized and boundary > length:
-        matrix_all = standard_mult.standard(matrix_a, matrix_b, length)
-    elif length == 1:
+        matrix_all = standard_mult.standard(matrix_a, matrix_b, length)  # using standard method
+    elif length == 1:  # if length is 1, stop recursion and start to merge from the smallest sub matrix
         matrix_all = np.array([matrix_a[0] * matrix_b[0]])
     else:
         if length % 2 != 0:
@@ -103,6 +199,14 @@ def strassen(matrix_a, matrix_b, length, optimized=False, boundary=6):
     return matrix_all
 
 
+"""
+@ Function: strassen_solver(file_1, file_2)
+    the solver method for the strassen matrix multiplication(not containing the lower boundary optimization)
+@ Parameters: file_1, file_2
+    the test files that read in 
+"""
+
+
 def strassen_solver(file_1, file_2):
     m1_file = open(file_1, 'r+')
     m2_file = open(file_2, 'r+')
@@ -110,15 +214,13 @@ def strassen_solver(file_1, file_2):
     matrix_a = read_matrix(m1_file)
     matrix_b = read_matrix(m2_file)
     length = int(math.sqrt(len(matrix_a)))
-    # matrixC = np.zeros((length, length))
 
     # print('>> [INFO] Input matrix A:\n', matrix_a.reshape(length, length))
     # print('>> [INFO] Input matrix B:\n', matrix_b.reshape(length, length))
-    # print(matrixC)
     tic = timer()
     result_matrix = strassen(matrix_a, matrix_b, length)
     toc = timer()
     result_length = int(math.sqrt(len(result_matrix)))
     result_matrix = result_matrix.reshape(result_length, result_length)
-    # print('>> [INFO] Output matrix B:\n', result_matrix)  # FIXME: adjust result
+    # print('>> [INFO] Output matrix B:\n', result_matrix)
     return toc - tic
