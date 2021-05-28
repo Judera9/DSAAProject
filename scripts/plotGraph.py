@@ -91,6 +91,7 @@ def plot_solver(standard_file, standard_des, strassen_file, strassen_des):
 def plot_triplex(filenames, descriptions):
     plot_graph(filenames, descriptions)
 
+
 # plot_triplex([
 #     # '..\\data\\python_final_data\\depre_adapted\\dataset_adapted_128_to500type2.txt',
 #     # '..\\data\\python_final_data\\depre_adapted\\dataset_adapted_64_to500type2.txt',
@@ -143,12 +144,12 @@ def plot_triplex(filenames, descriptions):
 
 # plot_triplex(['..\\data\\c_super_method\\CPP.txt'], ['standard_method_c'])
 
-# plot_triplex([
-#     '..\\data\\dataset_strassen_with_print.txt',
-#     '..\\data\\dataset_strassen_without_print.txt',
-#     # '..\\data\\python_final_data\\strassen3_thread\\standard_type2.txt',
-# ], [
-#     'strassen_with_print',
-#     'strassen_without_print',
-#     # 'standard'
-# ])
+plot_triplex([
+    '..\\data\\java_final_data\\strassen2_128_java_1000_appall0.txt',
+    '..\\data\\java_final_data\\strassen2_128_java_1000_appone0.txt'
+    # '..\\data\\python_final_data\\strassen3_thread\\standard_type2.txt',
+], [
+    'append 0s at beginning',
+    'append 0s for odd length'
+    # 'standard'
+])
